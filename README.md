@@ -6,4 +6,9 @@ popup UIView with some background on top of UIViewController
 Usage:
 in UIViewController
 
-  self.showSubview(upperView: YOUR_UI_VIEW, completion: .close)
+    self.showSubview(upperView: YOUR_UI_VIEW, completion: .close)
+
+or:
+    self.showSubview(upperView: offlineMaps, completion: .custom(complition: {
+            print("some code")
+        }))
