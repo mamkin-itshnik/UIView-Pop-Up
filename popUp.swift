@@ -16,6 +16,10 @@ extension UIViewController {
             super.touchesEnded(touches, with: event)
             guard let touchPoint = touches.first?.location(in: self) else { return }
             guard self.bounds.contains(touchPoint) else { return }
+            
+            for view in self.subviews{
+                if view.bounds.contains(touchPoint) { return }
+            }
             (outTouchHandler ?? {})()
         }
     }
