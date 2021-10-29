@@ -1,4 +1,8 @@
 # UIView-Pop-Up
+
+ATTENTION: think if you are here.
+Why aren't you using the viewController popUp present?
+
 popup UIView with some background on top of UIViewController
 after touchesEnded on background, UIView will close or call your clojure
 
